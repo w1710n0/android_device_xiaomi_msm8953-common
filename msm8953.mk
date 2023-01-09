@@ -145,10 +145,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor
 
 # FM
-PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
+#PRODUCT_PACKAGES += \
+#    FM2 \
+#    libqcomfm_jni \
+#    qcom.fmradio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
