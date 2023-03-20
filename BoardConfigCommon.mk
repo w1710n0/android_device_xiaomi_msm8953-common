@@ -36,6 +36,9 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 ifeq ($(TARGET_KERNEL_VERSION),4.9)
 BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true
 endif
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := playground
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-playground
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
