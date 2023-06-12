@@ -51,6 +51,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="show_cdma_choices_bool" value="true" />
         <boolean name="allow_video_call_in_low_battery" value="true" />
         <boolean name="config_enable_display_14digit_imei" value="false" />
+        <boolean name="default_carrierconfig_loaded" value="true" />
+        <boolean name="show_ims_registration_status_bool" value="true" />
+        <boolean name="apn_expand_bool" value="true" />
+        <boolean name="allow_adding_apns_bool" value="true" />
+        <boolean name="show_cdma_choices_bool" value="true" />
+        <boolean name="show_apn_setting_cdma_bool" value="true" />
+        <boolean name="world_phone_bool" value="true" />
+        <boolean name="config_update_service_status" value="false"/>
         <!-- Determines whether UI extensions for video calls should be used or not -->
         <boolean name="video_call_use_ext" value="true" />
         <!-- Determines if a customized video ui support is required or not -->
@@ -105,6 +113,26 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_one_way_accept_video_call" value="true"/>
         <!-- Config for multi anchor conference support  -->
         <boolean name="carrier_supports_multianchor_conference" value="false"/>
+        <!-- Config for Call Composer Feature support -->
+        <boolean name="carrier_call_composer_supported_bool" value="false"/>
+        <!-- Config for explicit call transfer support for an IMS call -->
+        <boolean name="carrier_allow_transfer_ims_call_bool" value="true" />    
+    
+        <!-- show for all -->
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+
+        <long name="carrier_data_call_apn_retry_after_disconnect_long" value="100" />
+        <!-- Config to enable the example android location attribution app by default -->
+        <string name="gps.nfw_proxy_apps">com.example.android.locationattribution</string>
+        <boolean name="carrier_cross_sim_ims_available_bool" value="true" />
+        <!-- Config for B2C Enriched Calls Feature support -->
+        <boolean name="carrier_b2c_enriched_calling_supported_bool" value="false"/>
+
+        <!-- Allow VoLTE and WFC by default -->
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="001" mnc="01">
