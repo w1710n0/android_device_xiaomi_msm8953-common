@@ -36,6 +36,10 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 ifeq ($(TARGET_KERNEL_VERSION),4.9)
 BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true
 endif
+BUILD_TOP := $(abspath .)
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := clang-r450784d
+TARGET_KERNEL_CLANG_PATH := $(BUILD_TOP)/prebuilts/clang/host/linux-x86/$(TARGET_KERNEL_CLANG_VERSION)
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -146,6 +150,7 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_AVOID_IFACE_RESET_MAC_CHANGE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+TARGET_HAS_BROKEN_WLAN_SET_INTERFACE := true
 
 # Inherit from the proprietary version
 include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
