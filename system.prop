@@ -6,6 +6,7 @@ ro.audio.soundfx.dirac=true
 # Bluetooth
 bluetooth.hfp.client=1
 persist.vendor.btstack.enable.splita2dp=false
+persist.vendor.btstack.a2dp_offload_cap=false
 qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
